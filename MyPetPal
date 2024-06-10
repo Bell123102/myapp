@@ -1,0 +1,94 @@
+package mypetpal;
+import andriod.content.Intent;
+import andriod.os.Bundle;
+import andriodx.android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends 
+AppCompatActivity{
+@override
+protected void onCreate(BundlesavedInstanceState){
+super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_main);
+
+Button petProfileButton=
+findViewById(R.id.petProfileButton);
+Button healthRecordsButton=
+findViewById(R.healthRecordsButton);
+Button trainingButton=
+findViewById(R.id.trainingButton);
+Button activityLogButton=
+findViewById(R.id.activityLogButton);
+Button getSocialButton=
+findViewId(R.id.getSocialButton);
+
+petProfileButton.setOnClickListener(new View.OnClickListener(){
+@override
+public void onClick(View v) {
+Intent intent=new
+Intent(MainActivity.this,
+PetProfileActivity.class);
+startActivity(intent);
+}
+});
+trainingButton.setOnClickListener(new View.OnClickListener(){
+@override
+public void onClick(View v){
+Intent intent= new 
+Intent(MainActivity.this,
+TrainingActivity.class);
+startAcivity(intent);
+}
+});
+activityLogButton.setOnClickListener(new View.OnClickListener(){
+@overrride
+public void onClick(View v){
+Intent intent=new
+Intent (MainActivity.this,
+ActivityLogActivity.class);
+startActivity(intent);
+});
+getSocailButton.setOnClickListener(new View.OnClickListener(){
+@override
+public void intent= new
+Intent(MainActivity.this,
+GetSocialActivity.class);
+startActivity(intent);
+}
+});
+}
+}
+<LinearLayout xmlns:android="HTTP://
+schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#FFFACD"
+android:padding="16dp">
+<TextView
+android:layout_width+"wrap_content"
+android:layout_height="wrap_content"
+android:text="My Pet Pal"
+android:textSize="24sp"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="20dp"/>
+<ImageView
+android:layout_width="match_parent"
+android"layout_height="200dp"
+android:src="@drawable/pets"
+android:layout_marginBottom="20dp"
+android:scaleType="centerCrop"/>
+<button
+android:id="@+id/petProfileButton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Pet profile"
+android:background="#FFA500"
+android:textColor=#FFFFFF"
+
+
+
+
+
+
+
